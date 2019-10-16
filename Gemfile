@@ -19,6 +19,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Backend
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'bcrypt', '3.1.11'
 
 # Tool
 group :development, :test do
