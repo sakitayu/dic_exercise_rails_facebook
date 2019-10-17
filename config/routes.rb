@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :feeds do
+  resources :blogs do
     collection do
       post :confirm
     end
