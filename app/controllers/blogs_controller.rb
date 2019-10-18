@@ -1,7 +1,9 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   def index
+    #binding.pry
     @blogs = Blog.all.order(id: "desc")
+    #@user = User.find(params[:id])
   end
 
   def new
