@@ -65,7 +65,9 @@
       </div>
     </div>
     <div class="main-block-center">
-    <%= link_to '新しくブログを投稿する', new_blog_path %>
+      <div class="main-box">
+      &nbsp;&nbsp;<%= link_to '新しくブログを投稿する', new_blog_path %>
+      </div>
       <% @blogs.each do |blog| %>
       <div class="main-box">
         <table>
@@ -97,7 +99,66 @@
       <% end %>
     </div>
     <div class="main-block-right">
-    <span>おぬぬめグループ</span>
+      <span>おぬぬめグループ</span>
+      <div class="recommend-group">
+        <%= image_tag "snow.jpg", class: 'recommend-pic' %>
+        <table>
+          <tr>
+            <td>
+              <p class="blue-line">雪山をひたすら登る会</p>
+              <p class="grey-line">メンバー1,950人</p>
+            </td>
+            <td>
+              <div class="entry_btn">＋グループに参加</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="recommend-group">
+        <%= image_tag "yakitori.jpg", class: 'recommend-pic' %>
+        <table>
+          <tr>
+            <td>
+              <p class="blue-line">焼き鳥を食べまくるた</p>
+              <p class="blue-line">めにわざわざ仕事まで</p>
+              <p class="blue-line">休んでしまう人たち</p>
+              <p class="grey-line">メンバー8,910人</p>
+            </td>
+            <td>
+              <div class="entry_btn">＋グループに参加</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="recommend-group">
+        <%= image_tag "factory.jpg", class: 'recommend-pic' %>
+        <table>
+          <tr>
+            <td>
+              <p class="blue-line">工業地帯の夜景をもく</p>
+              <p class="blue-line">もく撮影するグループ</p>
+              <p class="grey-line">メンバー150人</p>
+            </td>
+            <td>
+              <div class="entry_btn">＋グループに参加</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="recommend-group">
+        <%= image_tag "tea.jpg", class: 'recommend-pic' %>
+        <table>
+          <tr>
+            <td>
+              <p class="blue-line">紅茶をひたすら飲み隊</p>
+              <p class="grey-line">メンバー70人</p>
+            </td>
+            <td>
+              <div class="entry_btn">＋グループに参加</div>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 </main>
