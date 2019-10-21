@@ -3,7 +3,10 @@
 
 <p>
   <strong>Image:</strong>
-  <%= image_tag @blog.image.url %>
+  <% if @blog.image.file.nil? %>
+  <% else %>
+    <%= image_tag @blog.image.url %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |

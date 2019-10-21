@@ -3,7 +3,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   
   storage :file
 
-  process :resize_to_limit => [150, 150] # 画像サイズの調整
+  process :resize_to_limit => [488, 300] # 画像サイズの調整
   
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
