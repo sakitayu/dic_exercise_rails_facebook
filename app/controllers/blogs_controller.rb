@@ -49,7 +49,6 @@ class BlogsController < ApplicationController
     render :new if @blog.invalid?
   end
 
-
   private
 
   def blog_params
