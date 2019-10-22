@@ -9,7 +9,7 @@
           <div class="search-img"><%= image_tag "Search.png", class: 'search-png' %></div>
         </div>
       </td>
-      <td><%= image_tag "acount-pic.png", size: '25x25', class: 'header-acount-pic' %></td>
+      <td> </td>
       <td>
         <div class="header-menu">
           <% flash.each do |key, value| %>
@@ -46,7 +46,8 @@
 <main>
   <div class="general-box">
     <h1>登録</h1>
-
+    <p>※アカウント名は最大9文字まで</p>
+    <p>※パスワードは最低6文字以上</p>
     <% if @user.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(@user.errors.count, "error") %> prohibited this @user from being saved:</h2>
@@ -59,16 +60,16 @@
     <% end %>
 
     <%= form_with(model: @user, local: true) do |f| %>  
-      <%= f.label :name %>
+      <%= f.label :name, 'アカウント名' %>
       <%= f.text_field :name %>
 
-      <%= f.label :email %>
+      <%= f.label :email, 'E-mailアドレス' %>
       <%= f.email_field :email %>
 
-      <%= f.label :password %>
+      <%= f.label :password, 'パスワード' %>
       <%= f.password_field :password %>
 
-      <%= f.label :password_confirmation %>
+      <%= f.label :password_confirmation, 'パスワード(確認)' %>
       <%= f.password_field :password_confirmation %>
       <br>
       <br>

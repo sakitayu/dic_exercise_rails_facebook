@@ -318,12 +318,16 @@ main {
 .general-box {
   width: 300px;
   margin:100px auto;
-  padding: 30px;
+  padding: 20px 30px 30px 30px;
   background-color: white;
   border-radius: 3px;
   border-style: solid; border-width: 1px;
   border-color: #D2D5DA;
   border-radius: 3px;
+}
+
+.general-box img {
+  width: 100%;
 }
 
 .detail-box {
@@ -338,4 +342,8 @@ main {
 
 .detail-box img{
   width: 100%;
+}
+
+.detail {
+  padding-left: 230px;
 }
