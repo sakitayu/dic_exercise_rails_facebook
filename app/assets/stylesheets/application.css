@@ -33,7 +33,7 @@ header td {
 }
 
 .header-menu {
-  width: 360px;
+  width: 390px;
   color: white;
   margin-top: 4px;
 }
@@ -74,7 +74,7 @@ main {
 .fake-search-box {
   color: grey;
   height: 25px;
-  width: 480px;
+  width: 450px;
   background-color: white;
   border-radius: 3px;
   margin: 5px 5px 0px 0px;
@@ -179,10 +179,29 @@ main {
 .main-box {
   background-color: white;
   margin: 10px 0;
+  padding-top: 15px;
+  border-style: solid; border-width: 1px;
+  border-color: #D2D5DA;
+  border-radius: 3px;
+}
+
+.main-box-new {
+  background-color: white;
+  margin: 10px 0;
   padding: 10px 0;
   border-style: solid; border-width: 1px;
   border-color: #D2D5DA;
   border-radius: 3px;
+}
+
+.main-box-new a {
+  color:white;
+  padding:8px 0px;
+}
+
+.main-box-new a:hover{
+  text-decoration: none;
+  background-color: #286090;
 }
 
 .box-acount-pic {
@@ -210,6 +229,7 @@ main {
 
 .box-pic img{
   width:488px;
+  border-radius: 0px  0px 3px 3px;
 }
 
 .main-block-right {
@@ -271,4 +291,51 @@ main {
   border-radius: 3px;
   margin-left:12px;
   padding: 0 7px;
+}
+
+.profile-acount-pic {
+  background-color: #D2D5DA;
+  border-radius: 600px;
+  margin:30px 10px;
+}
+
+.profile {
+  width: 500px;
+  margin:100px auto;
+}
+
+.login_box {
+  width: 300px;
+  margin:100px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 3px;
+  border-style: solid; border-width: 1px;
+  border-color: #D2D5DA;
+  border-radius: 3px;
+}
+
+.general-box {
+  width: 300px;
+  margin:100px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 3px;
+  border-style: solid; border-width: 1px;
+  border-color: #D2D5DA;
+  border-radius: 3px;
+}
+
+.detail-box {
+  width: 300px;
+  margin:100px auto;
+  background-color: white;
+  border-radius: 3px;
+  border-style: solid; border-width: 1px;
+  border-color: #D2D5DA;
+  border-radius: 3px;
+}
+
+.detail-box img{
+  width: 100%;
 }

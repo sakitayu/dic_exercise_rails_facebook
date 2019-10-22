@@ -1,3 +1,51 @@
-<h2>ブログを作成する</h2>
+<header>
+  <table>
+    <tr>
+      <td><%= image_tag "facebook.png", class: 'fakebook-logo' %></td>
+      <td>
+        <div class="fake-search-box">
+          <div class="search-sujest">検索</div>
+          <div class="search-content"></div>
+          <div class="search-img"><%= image_tag "Search.png", class: 'search-png' %></div>
+        </div>
+      </td>
+      <td><%= image_tag "acount-pic.png", size: '25x25', class: 'header-acount-pic' %></td>
+      <td>
+        <div class="header-menu">
+          <% flash.each do |key, value| %>
+            <%= content_tag(:div, value, class: "#{key}") %>
+          <% end %>
+          <span>
+          <% if logged_in? %>
+            <%= link_to "#{current_user.name}", user_path(current_user.id) %>
+          </span>
+          <span class="blue-line"> | </span>
+          <span>
+            <%= link_to "ホーム", blogs_path %>
+          </span>
+          <span class="blue-line"> | </span>
+          <span>友達を検索</span>
+          <span class="blue-line"> | </span>
+          <span>作成</span>
+          <span class="blue-line"> | </span>
+          <span>うに</span>
+          <span class="blue-line"> | </span>
+          <span>
+          <%= link_to "Logout", session_path(current_user.id), method: :delete %>
+          <% else %>
+            <%= link_to "Sign up", new_user_path %>
+            <%= link_to "Login", new_session_path %>
+          <% end %>
+          </span>
+        </div>
+      </td>
+    </tr>
+  </table>
+</header>
 
-  <%= render 'form' %>
+<main>
+  <div class="general-box">
+    <h2>投稿を作成</h2>
+    <%= render 'form' %>
+  </div>
+</main>
