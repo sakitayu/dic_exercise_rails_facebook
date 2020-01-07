@@ -14,6 +14,11 @@ header {
   height: 45px;
   width:100%;
   margin:0;
+  top:0;
+  position:fixed;
+  border-style: solid; 
+  border-width: 0 0 1px 0;
+  border-color:#25487D;
 }
 
 header div {
@@ -63,6 +68,7 @@ main {
   width: 995px;
   margin-left: auto;
   margin-right: auto;
+  margin-top:34px;
 }
 
 .fakebook-logo {
@@ -119,7 +125,7 @@ main {
   vertical-align:top;
   font-size: 15px;
   width: 200px;
-  margin-top:15px;
+  margin-top:22px;
   padding: 6px 6px 6px 6px;
 }
 
@@ -148,8 +154,9 @@ main {
   font-size: 12px;
   font-weight: bold;
   background-color: #F5F6F7;
-  padding: 3px 2px 0px 5px;
-  border-style: solid; border-width: 1px;
+  padding: 4px 2px 1px 5px;
+  border-style: solid; 
+  border-width: 1px;
   border-color: #D2D5DA;
   border-radius: 3px;
 }
@@ -160,8 +167,50 @@ main {
 
 .left-box-unfocus{
   font-size: 13px;
-  margin: 5px 0;
-  padding: 3px 0 0px 5px;
+  padding: 4px 2px 1px 5px;
+  border-style: solid; 
+  border-width: 0 1px 1px 1px;
+  border-color: #E9EBEE;
+}
+
+.left-box-unfocus:hover {
+  background-color: #F5F6F7;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  border-color: #D2D5DA;
+  border-radius: 3px;
+}
+
+.left-box-unfocus-alt {
+  font-size: 13px;
+  padding: 4px 2px 1px 5px;
+  border-style: solid; 
+  border-width: 1px;
+  border-color: #E9EBEE;
+}
+
+.left-box-unfocus-alt:hover {
+  background-color: #F5F6F7;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #D2D5DA;
+  border-radius: 3px;
+}
+
+.left-box-unfocus img {
+  margin-bottom: 3px;
+}
+
+.left-box-unfocus-alt img {
+  margin-bottom: 3px;
+}
+
+.discover {
+  color: #606670;
+  font-size:13px;
+  font-weight:bold;
+  margin:16px 0 5px 0;
+  padding-left:5px;
 }
 
 .left-reader{
@@ -246,7 +295,7 @@ main {
 
 .main-block-right span{
   font-weight: 700;
-  color: grey;
+  color: #606670;
 }
 
 .recommend-group{

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.6.5'
 
 # Core
 gem 'rails', '~> 5.2.3'
@@ -27,6 +27,20 @@ gem 'mini_magick'
 group :development, :test do
   
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'pry-rails'
+
+  #RSpecのカリキュラム用に追加でインストール↓
+  gem 'spring'
+
+  gem 'rspec-rails'
+  gem 'spring-commands-rspec'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'capybara', '~> 2.13'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
 end
 
 group :development do
@@ -34,18 +48,21 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   
-  gem 'spring'
+  #gem 'spring' 重複してる
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'pry-rails'
+  #gem 'pry-rails'
+
+  #RSpecのカリキュラム用に追加でインストール↓
+  #gem 'web-console', '~> 2.0' 重複してる
 end
 
 group :test do
   
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  #gem 'capybara', '>= 2.15' 重複してる
+  #gem 'selenium-webdriver' 重複してる
   
   gem 'chromedriver-helper'
-  gem 'pry-rails'
+  #gem 'pry-rails'
 end
 
 
