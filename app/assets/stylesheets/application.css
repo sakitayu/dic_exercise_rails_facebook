@@ -213,6 +213,24 @@ main {
   padding-left:5px;
 }
 
+.left-box-more {
+  font-size: 12px;
+  padding: 4px 2px 1px 5px;
+  border-style: solid; 
+  border-width: 1px;
+  border-color: #E9EBEE;
+  padding-top:10px;
+  padding-left:10px;
+}
+
+.left-box-more span {
+  color: #385798;
+}
+
+.left-box-more span:hover{
+  text-decoration-line: underline;
+}
+
 .left-reader{
   float:right;
   padding-right: 0px;
